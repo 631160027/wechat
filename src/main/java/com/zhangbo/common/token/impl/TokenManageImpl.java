@@ -71,7 +71,7 @@ public class TokenManageImpl implements TokenManage {
 
     @Override
     public TokenModel getUserToken(String token) {
-        com.auth0.jwt.JWTVerifier verifier = null;
+        com.auth0.jwt.JWTVerifier verifier = null ;
         try {
             verifier = JWT.require(Algorithm.HMAC256(JWT_SECRET)).withIssuer(JWT_KEY).build();
         } catch (Exception e) {
