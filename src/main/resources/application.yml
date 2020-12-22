@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    password: hTy@!#645
+    url: jdbc:mysql://39.106.125.157:3306/wechat?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    initial-size: 10
+    max-active: 100
+    max-idle: 30
+    min-idle: 10
+    test-on-borrow: true
+    test-on-return: true
+    validation-query: select 1
+server:
+  port: 8083
+mybatis:
+  type-aliases-package: com.zhangbo.po.*
+  mapper-locations: classpath*:mybatis/*/*.xml
+
